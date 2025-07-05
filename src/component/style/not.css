@@ -1,0 +1,9 @@
+.not{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t{
+  font-size: 40px;
+}

@@ -1,0 +1,72 @@
+body{
+   background-position: center;
+   background-size: cover;
+   padding: 0px;
+    margin: 0px;
+  }
+.login{
+  height: 98vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/TODO-App/img1.jpg');
+}
+.login h2{
+  width: 100%;
+  text-align: center;
+  color: rgb(239, 24, 24);
+}
+.field{
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items : center;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.title{
+  width: 100%;
+  color: white;
+  display: flex;
+
+}
+.login form{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width:400px;
+  border: 1px solid white;
+  align-items: center;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+
+}
+input{
+  width: 100%;
+  border : none;
+  background: transparent;
+  margin-top: 5px;
+  box-shadow: none;
+  color: white;
+  outline: none;
+}
+.button{
+  height: 30px;
+  width: 100%;
+  background-color: rgba(43, 8, 242, 0.3);
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: arial black;
+  margin-top: 30px;
+}

@@ -1,0 +1,193 @@
+.todo {
+  height: 239px;
+  width: 320px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 3px;
+  position: relative;
+  background-color: #366efb;
+  border-radius: 20px;
+
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), /* Main shadow */ 0 0 0 4px white,
+    /* Outer white border */ inset 0 2px 4px rgba(255, 255, 255, 0.4),
+    /* Inner light */ inset 0 -4px 6px rgba(0, 0, 0, 0.3); /* Inner shadow */
+  transition: all 0.3s ease;
+  padding-top: 22px;
+  margin-bottom: 30px;
+  animation: arrise 0.3s ease-in-out;
+}
+.tit {
+  height: 20px;
+  width: 100%;
+  padding: 3px 3px;
+  font-size: 23px;
+  font-family: arial black;
+  color: white;
+  margin-bottom: 10px;
+}
+.date2 {
+  width: 98%;
+  justify-content: space-between;
+  padding: 0px 1%;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 12px;
+  display: flex;
+  margin-top: 10px;
+}
+.date2 h2 {
+  margin: 0px;
+  margin-top: 6px;
+  letter-spacing: 2px;
+}
+.type {
+  height: 40px;
+  width: 100px;
+  position: absolute;
+  left: 110px;
+  border-radius: 20px;
+  background-color: rgb(235, 23, 115);
+  padding: 5px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  top: -25px;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  height: 70px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 1px 4px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: white;
+}
+.but {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.impo {
+  height: 25px;
+  width: 120px;
+  background-color: rgb(226, 112, 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  color: white;
+  border-radius: 7px;
+}
+.fevo {
+  height: auto;
+  width: 90px;
+  background-color: rgb(235, 27, 27);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  color: white;
+  border-radius: 7px;
+}
+.complite {
+  height: 35px;
+  width: 90%px;
+  margin: 13px 10px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
+  padding: 0px 5%;
+}
+.delet {
+  height: 20px;
+  width: 30px;
+  background-color: red;
+  position: absolute;
+  right: -7px;
+  top: -5px;
+  border-radius: 10px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.progress{
+  background-color: #FFC107;
+  color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  border-radius: 5px;
+}
+
+@keyframes arrise {
+  from{
+    transform: scale(0);
+    opacity: 0;
+  }
+  to{
+    transform:scale(1);
+    opacity: 1;
+  }
+  
+}
+@media screen and (max-width: 1025px) {
+  .todo {
+    width: 300px;
+    height: 230px;
+  }
+
+  .but {
+    width: 90%;
+  }
+  .type{
+    left : 100px;
+  }
+ 
+}
+@media screen and (max-width: 1000px) {
+ .todo {
+    width: 280px;
+    height: 230px;
+  }
+
+  .but {
+    width: 90%;
+  }
+  .type{
+    left: 90px;
+  }
+  
+  
+}
+
+@media screen and (max-width: 950px){
+  .todo {
+    width: 320px;
+    height: 239px;
+  }
+  .type{
+    left: 110px;
+  }
+}
+@media screen and (max-width: 700px){
+  
+
+}
+@media screen and (max-width: 600px) {
+ 
+  .but {
+    width: 90%;
+  }
+  
+}

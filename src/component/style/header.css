@@ -1,0 +1,118 @@
+header {
+  height: 55px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+.name {
+  font-size: 20px;
+  font-family: arial black;
+  color: rgb(212, 26, 51);
+  position: absolute;
+  left: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  height: auto;
+  width: auto;
+  /* background-color: red; */
+  position: absolute;
+  right: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 250px;
+}
+.date p {
+  margin: 0px;
+  padding: 0px;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.add {
+  margin-top: 5px;
+  font-size: 28px;
+  transition: all 0.3s;
+}
+.add:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.user {
+  margin-top: 4px;
+  font-size: 24px;
+  transition: all 0.3s;
+}
+.user:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+.show {
+  height: auto;
+  width: auto;
+  /* background-color: blue; */
+  margin-right: 10px;
+  display: none;
+  color: black;
+  margin-top: 3.5px;
+}
+
+.show:active{
+  transform: rotate(360deg);
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 700px) {
+  .show {
+    display: block;
+  }
+  .name{
+    font-size: 17px;
+  }
+  .right{
+    width: 150px;
+    font-size: 12px;
+  }
+  .date p{
+    font-size: 12px;
+  }
+  .add {
+    font-size: 25px;
+  }
+  .user {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .show {
+    display: block;
+  }
+  .name{
+    font-size: 15px;
+  }
+  .right{
+    width: 150px;
+    font-size: 12px;
+  }
+  .date p{
+    font-size: 12px;
+  }
+  .add {
+    font-size: 25px;
+  }
+  .user {
+    font-size: 21px;
+  }
+}
